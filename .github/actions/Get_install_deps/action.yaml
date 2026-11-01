@@ -10,7 +10,7 @@ runs:
   steps:
     - name: Cache dependencies
       id: cache
-      if: ${{inputs.chache_disable}} == 'false'
+      if: inputs.chache_disable == 'false'
       uses: actions/cache@v6
       with:
         path: node_modules
